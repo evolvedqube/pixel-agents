@@ -1,0 +1,11 @@
+{
+  "name": "pixel-agents",
+  "owner": { "name": "Evolved Qube Inc" },
+  "plugins": [
+    {
+      "name": "pixel-agents",
+      "description": "Sends Claude Code session events to the Pixel Agent menu bar app.",
+      "source": "./"
+    }
+  ]
+}

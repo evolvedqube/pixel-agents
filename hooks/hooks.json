@@ -1,0 +1,225 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^(?!AskUserQuestion$)",
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      },
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 60,
+            "command": "curl -s -m 59 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "^(?!AskUserQuestion$)",
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 60,
+            "command": "curl -s -m 59 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "Elicitation": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "ElicitationResult": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PostModelSwitch": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "CwdChanged": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "TaskCreated": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ],
+    "TaskCompleted": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 5,
+            "command": "curl -s -m 4 -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:47290/hook || true"
+          }
+        ]
+      }
+    ]
+  }
+}

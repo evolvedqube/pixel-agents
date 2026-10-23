@@ -104,8 +104,8 @@
         "hooks": [
           {
             "type": "command",
-            "timeout": 60,
-            "command": "curl -s -m 59 -X POST -H 'Content-Type: application/json' -H \"X-Bundle-Id: $__CFBundleIdentifier\" -H \"X-Term-Program: $TERM_PROGRAM\" --data-binary @- http://127.0.0.1:47290/hook || true"
+            "timeout": 120,
+            "command": "t=119; curl -s -m $t -X POST -H \"X-Hook-Timeout: $t\" -H 'Content-Type: application/json' -H \"X-Bundle-Id: $__CFBundleIdentifier\" -H \"X-Term-Program: $TERM_PROGRAM\" --data-binary @- http://127.0.0.1:47290/hook || true"
           }
         ]
       }
@@ -116,8 +116,8 @@
         "hooks": [
           {
             "type": "command",
-            "timeout": 60,
-            "command": "curl -s -m 59 -X POST -H 'Content-Type: application/json' -H \"X-Bundle-Id: $__CFBundleIdentifier\" -H \"X-Term-Program: $TERM_PROGRAM\" --data-binary @- http://127.0.0.1:47290/hook || true"
+            "timeout": 300,
+            "command": "t=299; curl -s -m $t -X POST -H \"X-Hook-Timeout: $t\" -H 'Content-Type: application/json' -H \"X-Bundle-Id: $__CFBundleIdentifier\" -H \"X-Term-Program: $TERM_PROGRAM\" --data-binary @- http://127.0.0.1:47290/hook || true"
           }
         ]
       }

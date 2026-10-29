@@ -8,8 +8,7 @@ switching back to your terminal.
 > This repository contains only the plugin. The Pixel Agents app is a separate
 > Mac App Store download.
 
-<!-- TODO before publishing: replace the line below with the live Mac App Store link. -->
-**Get the app:** Pixel Agents on the Mac App Store — *link to be added on launch*
+**Get the app:** [Pixel Agents on the Mac App Store](https://apps.apple.com/us/app/pixel-agents/id6765938033?mt=12)
 
 ## Requirements
 
